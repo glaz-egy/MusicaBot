@@ -175,7 +175,7 @@ PauseFlag = False
 PlayFlag = False
 IbotFlag = False
 TitleFlag = True
-version = '''MusinaBot versioin: 0.0.1
+version = '''MusicaBot versioin: 0.0.1
 A subset of PlatinaBot version: 2.3.5
 Copyright (c) 2019 Glaz egy.'''
 args = ArgsInit()
@@ -581,7 +581,7 @@ async def on_message(message):
     elif message.content.startswith(prefix+'debug'):
         await client.send_message(message.channel, client.email)
     elif message.content.startswith(prefix+'description'):
-        await client.send_message(message.channel, 'MusinaBotはPlatinaBotの機能を縮小し、MusicBot機能のみを残したBotです\nPlatinaBot: https://github.com/glaz-egy/PlatinaBot')
+        await client.send_message(message.channel, 'MusicaBotはPlatinaBotの機能を縮小し、MusicBot機能のみを残したBotです\nPlatinaBot: https://github.com/glaz-egy/PlatinaBot')
     elif message.content.startswith(prefix):
         await client.send_message(message.channel, '該当するコマンドがありません')
         await log.ErrorLog('Command is notfound')

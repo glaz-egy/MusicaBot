@@ -14,12 +14,12 @@ CommandDictJP = {'help': OrderedDict(),
                 'music': OrderedDict(),
                 'role': OrderedDict()}
 
-CommandDictJP['help'] = { '`'+prefix+'role`': '役職関係のコマンド 詳しくは`{}help roleを見てね！`'.format(prefix),
+CommandDictJP['help'] = { '`'+prefix+'role`': '役職関係のコマンド 詳しくは`{}help role`を見てね！(機能縮小につき使用不可)'.format(prefix),
                         '`'+prefix+'music`': '音楽を再生するかもしれないコマンド `{}help music`で詳しく確認できるよ！'.format(prefix),
-                        '`'+prefix+'spell`': '呪文を唱えるコマンド `{}help spell`で確認できます'.format(prefix),
-                        '`'+prefix+'study`': '勉強用のコマンド `{}help study`で確認できます'.format(prefix),
-                        '`'+prefix+'say SayText`': 'ボットがSayTextの内容を発言します それだけのコマンド',
-                        '`'+prefix+'ibot option`': '`--start`でIBOTモードをON,`--stop`でOFFにします',
+                        '`'+prefix+'spell`': '呪文を唱えるコマンド `{}help spell`で確認できます(機能縮小につき使用不可)'.format(prefix),
+                        '`'+prefix+'study`': '勉強用のコマンド `{}help study`で確認できます(機能縮小につき使用不可)'.format(prefix),
+                        '`'+prefix+'say SayText`': 'ボットがSayTextの内容を発言します それだけのコマンド(機能縮小につき使用不可)',
+                        '`'+prefix+'ibot option`': '`--start`でIBOTモードをON,`--stop`でOFFにします(機能縮小につき使用不可)',
                         '`'+prefix+'version`': '現在のバージョンを確認できる',
                         '`'+prefix+'help`' : '今見てるのに説明いる？　ヘルプ用なんだけど',
                         '`'+prefix+'exit [ExitPassword]`': 'ボット管理者かExitPasswordを知っている人のみボットを停止できます',
@@ -43,35 +43,6 @@ CommandDictJP['music'] = {'`'+prefix+'music option`': '音楽関連のコマン�
                         '`$url`': 'URLを優先的に再生します',
                         '`'+prefix+'addmusic url [url]...`': '音楽をプレイリストに追加',
                         '`'+prefix+'delmusic url [url]...`': 'プレイリストから削除'}
-
-CommandDictJP['role'] = {'`'+prefix+'role option`': '`role`はオプションを必ず付けてね！',
-                        '`--list`': '現在ある役職を確認できます',
-                        '`--create RoleName`': '役職を新しく作れます',
-                        '`--create-admin RoleName`': '管理者権限を持つ役職を作ります(管理者のみ)',
-                        '`--delete RoleName`': '役職を消せます',
-                        '`--add RoleName`': '自分に役職を追加します',
-                        '`--rm RoleName`': '自分の役職を消します',
-                        '`--add-another UserName RoleName`': '`UserName`の役職を追加します(管理者のみ)',
-                        '`--rm-another UserName RoleName`': '`UserName`から役職を削除します(管理者のみ)'}
-
-CommandDictJP['spell'] = {'`'+prefix+'spell option`': '`呪文用のコマンド`',
-                        '`--list`': '呪文を確認します',
-                        '`--spell`': '呪文の中身を確認します',
-                        '`--add SpellName Spelltext [Spelltext]...`': '呪文を追加します 呪文名 につづけて 一節ずつスペースを空けて入力してください',
-                        '`--add-line SpellName`': '呪文を追加します 呪文名 と一緒に入力した後 一節ずつ入力してください',
-                        '`--del SpellName`': '呪文を削除します'}
-
-CommandDictJP['study'] = {'`'+prefix+'study`': '勉強用のコマンド',
-                        '`--list-subject`': '科目を確認します',
-                        '`--list-unit Subject`': '単元を確認します',
-                        '`--list-ques Subject Unit`': '問題を確認します',
-                        '`--add Subject Unit Ques Ans`': '一つ問題を追加します',
-                        '`--add-m Subject Unit Ques;Ans [Ques;Ans]...`': '複数入力することが出来ます',
-                        '`--del DelKey DelText`': 'DelKeyには[Subject, Unit, Ques]のいずれかを選び、削除したい項目を選んでください',
-                        '`--start Subject Unit [Unit]...`': '問題の出題を開始します',
-                        '`'+prefix+'ans Anwser`': '答えを入力します 専用チャンネルでは`Anwser`だけでも回答可能です',
-                        '`'+prefix+'ans --next`': '解答を出力して次の問題へ移ります',
-                        '`'+prefix+'ans --exit`': '出題を中断します'}
 
 CommandDictEN = OrderedDict()
 CommandDictEN = {'help': OrderedDict(),
